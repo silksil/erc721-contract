@@ -1,0 +1,37 @@
+{
+  "name": "erc721",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "local": "yarn hardhat run scripts/run.js",
+    "deploy:rinkeby": "yarn hardhat run scripts/deploy.js --network rinkeby",
+    "deploy:ethereum": "yarn hardhat run scripts/deploy.js --network mainnet",
+    "test": "yarn hardhat test",
+    "lint:sol": "solhint --config ./.solhint.json --max-warnings 0 \"contracts/**/*.sol\"",
+    "verify": "≈≈"
+  },
+  "keywords": [],
+  "author": "<silkreulen@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "chai": "^4.3.6",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.4.7",
+    "hardhat": "^2.6.5",
+    "prettier": "^2.5.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "solhint": "^3.3.7",
+    "solhint-plugin-prettier": "^0.0.5"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "dotenv": "^10.0.0"
+  }
+}
